@@ -1,13 +1,69 @@
 body {
+  --principal-color: rgb(167, 134, 26);
+  --principal-color-medium: rgb(253, 204, 96);
+  --principal-color-low: rgba(255, 237, 178, 0.856);
+ 
+}
+
+body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: rgba(255, 237, 178, 0.456);
   margin: 0;
-  padding: 20px;
 }
 
 h1 {
   text-align: center;
   color: #333;
+  margin: 0;
+  padding: 0;
+}
+li{
+  margin: 0;
+}
+p{
+  margin: 2px;
 }
 
+header{
+  background-color: var(--principal-color-low);
+  width: 100%;
+  font-size: 20px;
+  padding: 20px;
+}
+
+#listaUsuarios{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+
+.user {
+  width: 400px;
+  display: flex;
+ flex-direction: column;
+ border: 1px solid var(--principal-color);
+ margin: 10px;
+ padding: 10px;
+ width: 400px;
+ background-color: var(--principal-color-low);
+}
+.user:hover{
+  background-color: var(--principal-color-medium);
+  box-shadow: 2px 1px var(--principal-color);
+}
+
+.sector1{
+  display: flex;
+  justify-content: space-between;
+}
+.principal-data{
+  border: 1px solid var(--principal-color);
+  padding: 5px;
+  width: 70%;
+  margin: 0 10px 10px 0;
+}
+.user img{
+  width: 95px;
+  height: 95px;
+}
 
